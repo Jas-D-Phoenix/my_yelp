@@ -1,0 +1,73 @@
+.restaurant-list{
+    .account-link{
+        text-decoration: overline;
+        text-decoration-color: #8b2c5d; 
+        button.create-account-btn {
+            background-color: #e35965;
+            border: 1px solid #b9588c;
+            background-position: right bottom;
+            transition: all 0.5s ease-in;
+            padding: 0.35rem 1rem;
+            margin-top: 0rem;
+            margin-bottom: -1rem;
+            box-shadow: 0 4px 8px 0 rgba(52, 38, 146, 0.2), 0 6px 20px 0 rgba(121, 20, 20, 0.19);
+            text-align: center;
+            color: rgb(132, 58, 58);
+            font-size: 2rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        
+        button.create-account-btn:hover {
+          background-color: #e44dce;
+          border: 1px solid #fc8af1;
+          background-position: left bottom;
+          transition: all 0.5s ease-in;
+          translate: 0.5s;
+          cursor: pointer;
+        }
+    }
+    
+    .restaurant-created{
+        margin: 0 2rem;
+        h3{
+            font-size: 2rem;
+            margin-bottom: -1.5rem;
+            color: #580c79;
+        }
+        p{
+            font-size: 1.3rem;
+            margin-bottom: -1.7rem;
+            color: #79033e;
+            .restaurant-span{
+                color: #5b2b2b;
+                font-weight: 900;
+            }
+        }
+        
+            button.delete-btn {
+                background-color: #46035c;
+                border: 1px solid #55035c;
+                background-position: right bottom;
+                transition: all 0.5s ease-in;
+                padding: 0.35rem 1rem;
+                margin-top: 2rem;
+                box-shadow: 0 4px 8px 0 rgba(72, 15, 15, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+                color: white;
+                font-size: 1.2rem;
+              }
+            
+            button.delete-btn:hover {
+              background-color: #a0180b;
+              border: 1px solid #a0180b;
+              background-position: left bottom;
+              transition: all 0.5s ease-in;
+              translate: 0.5s;
+              cursor: pointer;
+            }
+        
+    }
+}
+

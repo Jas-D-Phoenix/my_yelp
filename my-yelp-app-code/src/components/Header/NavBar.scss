@@ -1,0 +1,75 @@
+$layout-breakpoint-small: 960px;
+$layout-breakpoint-extra-small: 425px;
+
+header{
+  background:          #f4bebe;
+  background-position: right bottom;
+  transition: all 0.5s ease-in-out;
+  padding: 1.5rem 2.5rem 0rem 2.5rem;
+  height: 5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  a{
+    text-decoration: none;
+  }
+  .nav-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+        .home-menu{
+            color: #b0279b;
+            font-weight: 900;
+            font-size: 1.5rem;
+        }
+
+        .logo{
+            width: 100%;
+            max-width: 10rem;
+            height: auto;
+            margin-top: -3.5rem;
+        }
+    }
+
+    button.logout-btn {
+    background-color: #6b0d6b;
+    border: 1px solid #b027a7;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    padding: 0.35rem 1rem;
+    margin-top: 0rem;
+    // margin-right: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: rgb(249, 247, 247);
+    font-size: 1.2rem;
+  }
+
+  button.logout-btn:hover {
+    background-color: #974578;
+    border: 1px solid #74114b;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
+    color: rgb(224, 192, 192);
+    cursor: pointer;
+    translate: 0.5s;
+  }
+}
+
+
+@media (max-width: $layout-breakpoint-small) {
+    header{
+      padding: 1.5rem 0.5rem 0rem 0.5rem;
+     }
+}
+  
+      @media (max-width: $layout-breakpoint-extra-small) {
+        header{
+            padding: 1.5rem 0rem 0rem 0rem;
+       
+              button.logout-btn {
+              font-size: 1rem;
+            }
+          
+          }
+            }

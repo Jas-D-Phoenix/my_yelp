@@ -1,0 +1,211 @@
+$neutral: #e4c7c7;
+$bgColor: #ebcddc;
+$spColor: #c741aa;
+$titleColor: #8e1c2f;
+$textColor: #331414;
+$placeHolderColor: #cca2b8;
+$errorMsg:#cca2b8;
+$submitBtn: #8b1125;
+$lightBorder: #b87792;
+$layout-breakpoint-medium: 800px;
+$layout-breakpoint-small: 700px;
+
+.restaurant-form{
+  background-color: $bgColor;
+  border: 1px solid $bgColor;
+  background-position: right bottom;
+  transition: all 0.5s ease-in-out;
+  padding: 0.8rem 2.5rem 0rem 2.5rem;
+  box-shadow: 0 4px 8px 0 rgba(164, 15, 57, 0.2), 0 6px 20px 0 rgba(187, 13, 13, 0.19);
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 100%;
+  margin: 10vh 30vw;
+  border-radius: 0.5rem;
+
+  a{
+    text-decoration: none;
+  }
+span{
+  color: $spColor;
+}
+
+h1{
+  color: $titleColor;
+  text-align: center;
+}
+
+form{
+  text-align: left;
+}
+
+label{
+  font-weight: 500;
+    font-size: 1.3rem;
+    color: $textColor;
+    display: block;
+    margin-bottom: 0rem;
+}
+
+input{
+  font-size: 1.2rem;
+  color: $textColor;
+  padding-left: 0.7rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid $lightBorder;
+  &::placeholder{
+    color: $placeHolderColor;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+
+
+p.error-msg{
+    color: $errorMsg;
+    margin-top: -1.45rem;
+    font-weight: 400;
+  }
+
+textarea {
+    font-size: 1.2rem;
+    color: #650420;
+    padding-left: 0.7rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 10rem;
+    border: 1px solid #dd8ab1;
+    resize: none;
+    &::placeholder{
+      color: $placeHolderColor;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+
+textarea::-webkit-scrollbar{
+    display: none;
+  }
+  
+  button.submit-btn {
+    background-color: $submitBtn;
+    border: 1px solid $submitBtn;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    padding: 1rem 2.5rem;
+    margin-top: 0rem;
+    box-shadow: 0 4px 8px 0 rgba(189, 2, 2, 0.2), 0 6px 20px 0 rgba(242, 13, 13, 0.19);
+    text-align: center;
+    color: $neutral;
+    font-size: 1.2rem;
+    font-weight: 900;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  button.submit-btn:hover {
+    background-color: #572009;
+    border: 1px solid #572009;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
+    color: $neutral;
+    cursor: pointer;
+    translate: 0.5s;
+  }
+
+  button.submit-btn:disabled,
+  button.submit-btn:disabled:hover,
+  button.submit-btn:disabled:active{
+    cursor: not-allowed;
+    background-color: $spColor;
+    border-color: $spColor;
+    color: rgb(216, 165, 165);
+  }
+
+    .sign-in{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        font-weight: 300;
+        margin-top: -0.2rem;
+
+        .create-acct{
+          color: $spColor;
+          text-decoration: overline;
+        }
+  }
+.copy-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  .copy{
+    color: $spColor;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+  
+}
+
+.table-container{
+    background-color: $bgColor;
+    border: 1px solid $bgColor;
+    background-position: right bottom;
+    transition: all 0.5s ease-in-out;
+    padding: 0.8rem 2.5rem 0rem 2.5rem;
+    box-shadow: 0 4px 8px 0 rgba(238, 39, 39, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 1.2rem;
+    font-weight: 300;
+    height: 80%;
+    margin: 9vh 9vw;
+    // border-radius: 0.5rem;
+
+    table{
+        width: 90%;
+        border-collapse: collapse;
+        margin: 2rem 0 2rem 0;
+    }
+    th{
+        color: $spColor;
+        height: 50px;
+        border: 1px solid $textColor;
+        background-color: $lightBorder;
+    }
+
+    td{
+        color: $textColor;
+        border: 1px solid $textColor;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: $layout-breakpoint-medium) {
+.restaurant-form{
+  margin: 8vh 10vw;
+  padding: 1rem 2rem 2.5rem 2rem;
+}
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  .restaurant-form{
+    margin: 8vh 3vw;
+    padding: 0.5rem 1rem 2rem 1rem;
+    label{
+        font-size: 1rem;
+    }
+    
+    input{
+      font-size: 1rem;
+    }
+    }
+  }

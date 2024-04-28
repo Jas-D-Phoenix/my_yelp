@@ -1,0 +1,98 @@
+$layout-breakpoint-medium: 1024px;
+$layout-breakpoint-small: 960px;
+$layout-breakpoint-extra-small: 425px;
+
+
+.heading{  
+    .heading-content{
+        background-color: #f5e8f2;
+        color: rgb(234, 169, 212);
+        padding: 0 3rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        h1{
+            font-size: 5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        p{
+            font-size: 3rem;
+            margin-top: -5rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        button.create-profile-btn {
+            background-color: #8b3611;
+            border: 1px solid #8b3611;
+            background-position: right bottom;
+            transition: all 0.5s ease-in;
+            padding: 0.35rem 1rem;
+            margin-top: 0rem;
+            margin-bottom: -1rem;
+            box-shadow: 0 4px 8px 0 rgba(234, 71, 71, 0.2), 0 6px 20px 0 rgba(103, 6, 6, 0.19);
+            text-align: center;
+            color: rgb(216, 194, 194);
+            font-size: 1.2rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        
+          button.create-profile-btn:hover {
+            background-color: #db66c0;
+            border: 1px solid #d06fe1;
+            background-position: left bottom;
+            transition: all 0.5s ease-in;
+            translate: 0.5s;
+            cursor: pointer;
+          }
+    }
+}
+
+@media (max-width: $layout-breakpoint-medium) {
+    .heading{
+        .heading-content{
+            
+            h1{
+                color: #ebbee1;
+                font-size: 4rem;
+            }
+            p{
+                font-size: 2rem;
+                margin-top: -4rem;
+            }
+        }
+    }
+    }
+    
+    @media (max-width: $layout-breakpoint-small) {
+        .heading{
+            .heading-content{
+                
+                h1{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 2rem;
+                    margin-top: -3rem;
+                }
+            }
+        }
+      }
+    
+      @media (max-width: $layout-breakpoint-extra-small) {
+        .heading{
+            .heading-content{
+                padding: 0 1rem;
+                h1{
+                    font-size: 1.8rem;
+                }
+                p{
+                    font-size: 1.4rem;
+                    margin-top: -1rem;
+                }
+            }
+        }
+      }
+    
