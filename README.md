@@ -2,10 +2,10 @@
 ***
 
 ## Task
-I am to create and deploy an application (my yelp) built in ReactJS into Amplify (AWS) using authentification.
+To create and deploy an application (my yelp) built in ReactJS into Amplify (AWS) using authentification.
 
 ## Description
-My yelp is an application that let's you create and delete a restaurant.
+My yelp is a CRUD application that let's you create, read, update and delete a restaurant.
 
 ## Installation
 Use npm start to start the server. Click this link to access the application; https://64e56f437cc9020b4c90ac50--polite-cobbler-27f0d7.netlify.app
